@@ -8,9 +8,18 @@ Aplicação web moderna e responsiva para consulta de previsão do tempo em temp
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white)
 
+---
+
 ## 📋 Sobre o Projeto
 
 Este projeto foi desenvolvido para fornecer informações meteorológicas detalhadas de qualquer cidade do mundo. Com uma interface intuitiva e design responsivo, o usuário pode consultar temperatura, umidade, velocidade do vento, nascer e pôr do sol, além de outras informações relevantes.
+
+
+> **Disciplina**: Webservices
+> **Curso**: Sistemas para Internet  
+> **Tipo**: Atividade de Programação Individual
+
+---
 
 ### ✨ Funcionalidades
 
@@ -22,6 +31,8 @@ Este projeto foi desenvolvido para fornecer informações meteorológicas detalh
 - 📱 **Design Responsivo**: Funciona perfeitamente em todos os dispositivos
 - ⚡ **Animações Suaves**: Interface moderna com transições fluidas
 
+---
+
 ## 🌐 Tecnologias Utilizadas
 
 - HTML5
@@ -31,6 +42,8 @@ Este projeto foi desenvolvido para fornecer informações meteorológicas detalh
 - Bootstrap Icons
 - Animate.css
 - OpenWeatherMap API
+
+---
 
 ## 🚀 Como Usar
 
@@ -91,9 +104,11 @@ Este projeto foi desenvolvido para fornecer informações meteorológicas detalh
 - ✅ Considere usar um backend para esconder a chave em aplicações de produção
 - ✅ Monitore o uso da sua chave no painel do OpenWeatherMap
 
+---
+
 ## 🤝 Contribuindo
 
-Contribuições são bem-vindas! Para contribuir:
+Este é um projeto acadêmico, mas sugestões são bem-vindas:
 
 1. Fork o projeto
 2. Crie uma branch (`git checkout -b feature/MinhaFeature`)
@@ -105,12 +120,13 @@ Contribuições são bem-vindas! Para contribuir:
 
 ## 📝 Licença
 
-Este projeto é um trabalho acadêmico desenvolvido para fins educacionais.
+Este projeto é um trabalho acadêmico desenvolvido para a disciplina de **Webservices** do curso de **Sistemas para Internet**.
 
 ---
 
 ## 👨‍💻 Autor
 
 **Hugo Vinícius Rodrigues Pereira**
+
 
 [![GitHub](https://img.shields.io/badge/GitHub-hugovrp-black?style=flat-square&logo=github)](https://github.com/hugovrp)
