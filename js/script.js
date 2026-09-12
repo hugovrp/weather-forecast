@@ -1,9 +1,9 @@
-let search_inp = document.getElementById('search-input');
-let search_btn = document.getElementById('search-btn');
-let weather_area = document.getElementById('weather-area');
-let main_area = document.getElementById('main');
-let history_section = document.getElementById('history-section');
-let history_cards = document.getElementById('history-cards');
+const search_inp = document.getElementById('search-input');
+const search_btn = document.getElementById('search-btn');
+const weather_area = document.getElementById('weather-area');
+const main_area = document.getElementById('main');
+const history_section = document.getElementById('history-section');
+const history_cards = document.getElementById('history-cards');
 
 // Configuração da API Key
 const API_KEY = 'SUA_CHAVE_API';
@@ -17,9 +17,8 @@ if (search_history.length > 0) {
 }
 
 search_inp.addEventListener('keydown', (event) => {
-    if(event.key === 'Enter') {
+    if(event.key === 'Enter') 
         search_btn.click();
-    }
 });
 
 search_btn.addEventListener('click', () => {
@@ -30,8 +29,8 @@ search_btn.addEventListener('click', () => {
         return;
     }
 
-    if(city.length < 2) {
-        showError('O nome da cidade deve ter pelo menos 2 caracteres.');
+    if(city.length < 1) {
+        showError('O nome da cidade deve ter pelo menos 1 caractere.');
         return;
     }
 
@@ -87,9 +86,8 @@ function addToHistory(city) {
     
     search_history.unshift(city);
     
-    if (search_history.length > 8) {
+    if (search_history.length > 8) 
         search_history = search_history.slice(0, 8);
-    }
     
     localStorage.setItem('weather_search_history', JSON.stringify(search_history));
     
@@ -144,9 +142,8 @@ function deleteFromHistory(city) {
     search_history = search_history.filter(item => item.toLowerCase() !== city.toLowerCase());
     localStorage.setItem('weather_search_history', JSON.stringify(search_history));
     
-    if(search_history.length === 0) {
+    if(search_history.length === 0) 
         history_section.style.display = 'none';
-    }
     
     renderHistory();
 }
@@ -159,11 +156,14 @@ function check_weather(city) {
             if (!response.ok) {
                 if(response.status === 404) {
                     throw new Error('Cidade não encontrada. Verifique o nome e tente novamente.');
-                } else if(response.status === 401) {
+                } 
+                else if(response.status === 401) {
                     throw new Error('API Key inválida. Verifique sua configuração.');
-                } else if(response.status === 429) {
+                } 
+                else if(response.status === 429) {
                     throw new Error('Limite de requisições excedido. Tente novamente mais tarde.');
-                } else {
+                } 
+                else {
                     throw new Error(`Erro ao buscar dados: ${response.status}`);
                 }
             }
@@ -266,13 +266,12 @@ function kelvin_to_celsius(kelvin) {
     let temp = (kelvin - 273.15).toFixed(1);
     const body = document.getElementById('body');
 
-    if (temp <= 15) {
+    if (temp <= 15) 
         body.style.background = "linear-gradient(135deg, #6fb1fc, #4364f7, #0b3d91)";
-    } else if (temp >= 26) {
-        body.style.background = "linear-gradient(135deg, #ff9a44, #fc6767, #e53935)";
-    } else {
+    else if (temp >= 26) 
+        body.style.background = "linear-gradient(135deg, #ff9a44, #fc6767, #e53935)"; 
+    else 
         body.style.background = "linear-gradient(135deg, #87ceeb, #4682b4, #1e3a8a)";
-    }
     
     return temp;
 }
