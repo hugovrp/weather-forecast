@@ -4,15 +4,17 @@ Aplicação web moderna e responsiva para consulta de previsão do tempo em temp
 
 Projeto desenvolvido para fornecer informações meteorológicas detalhadas de qualquer cidade do mundo. Com uma interface intuitiva e design responsivo, o usuário pode consultar temperatura, umidade, velocidade do vento, nascer e pôr do sol, além de outras informações relevantes.
 
-<img src="/img/readme-imgs/readme-img1.png" width="600" alt="Página exemplo1">
-
-<br>
-
-<img src="/img/readme-imgs/readme-img2.png" width="600" alt="Página exemplo1">
-
 > **Disciplina**: Webservices  
 > **Curso**: Sistemas para Internet  
 > **Tipo**: Atividade de Programação Individual
+
+<br>
+
+## 🔍 Prévia
+
+<img src="/img/readme-imgs/readme-img1.png" width="800" alt="Página exemplo1">
+
+<img src="/img/readme-imgs/readme-img2.png" width="800" alt="Página exemplo1">
 
 <br>
 
